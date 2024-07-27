@@ -1,0 +1,73 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #282c34; /* Dark background for a modern look */
+}
+
+.container {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 20px;
+  background: #333; /* Dark container background */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #fff; /* Light text color for readability */
+  background-color: #444; /* Darker display background */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #555; /* Medium dark background for buttons */
+  color: #fff; /* White text color for contrast */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #666; /* Slightly lighter on hover */
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  background-color: #ff5722; /* Bright color for operators */
+}
+
+.operator:hover {
+  background-color: #e64a19; /* Slightly darker on hover */
+}
